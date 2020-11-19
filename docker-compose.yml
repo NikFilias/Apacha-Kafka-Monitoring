@@ -11,6 +11,7 @@ services:
     build: /mnt/c/Dev Projects/Monitoring & Security/Monitoring Kafka/KafkaConsumer/
     depends_on:
      - kafka
+    command: tail -F anything
     
   prometheus:
    image: prom/prometheus
